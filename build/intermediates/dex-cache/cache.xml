@@ -2,116 +2,116 @@
 <items version="2" >
 
     <item
-        jar="/Users/jakubkalinowski/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="09b6fdfaf6692773369c51593ed2986ff14e447c">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7b6a7d0a91b37bdc893d14bbfab524efd3c9c9ac\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-annotations\2.2.2\285cb9c666f0f0f3dd8a1be04e1f457eb7b15113\jackson-annotations-2.2.2.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="285cb9c666f0f0f3dd8a1be04e1f457eb7b15113">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-annotations-2.2.2_b10469faabdbdff951820ca40ed9ee755033d312/classes.dex" />
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.2.2_62dd36faaa72477c6362a72623b447246fbd3f3e\classes.dex" />
     </item>
     <item
-        jar="/Users/jakubkalinowski/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0-alpha2/support-annotations-24.0.0-alpha2.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="8071e1e6cd07e9253720313d6c14286a7ee424e0">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0-alpha2_e9ddfb757630693c99cfa12ee7c58ea3e97b0b88/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="7f0ac2535978e0fbf1754be9c518f7e8b7a09248">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_8b90c4b1fe858149aadef13c9f3c5617e25e05e1/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="debf30ce0a7560396b6235edef77e447006454c2">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.3.0_3a05096e4bc03b2c7adb098bd5e1ce46e0ddd86d/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.0.0-alpha2/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="661a632c3b434991d6364690cbe0f786371101cc">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.0.0-alpha2_1c12ed5cfb97fa02b89b617fa7a9fb2af84da9b6/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha2/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="32ab8bede8cd600f25a5bb3fe15068c81c8910dc">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0-alpha2_5f264da325f6ae1786d0d61682eae8cc6f52f28a/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.2/d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b/jackson-core-2.2.2.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-core-2.2.2_cf3c556b1df1d3bb876bbe1920ae03f23cce0da7/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-databind/2.2.2/3c8f6018eaa72d43b261181e801e6f8676c16ef6/jackson-databind-2.2.2.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/jackson-databind-2.2.2_151aa65f6a599f4910c61f31ffc3890cda8b094a/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0-alpha2/jars/libs/internal_impl-24.0.0-alpha2.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="e460bc069dfd21d22770cf2a2370c9021b9c98a2">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0-alpha2_7bd813e514b0c0ffac951c4f1a6f00aaa4a6950e/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-android/2.3.1/be29b24233711c419ce935aa0a1b12ebc49d1c9a/firebase-client-android-2.3.1.jar"
+        jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.3.1\be29b24233711c419ce935aa0a1b12ebc49d1c9a\firebase-client-android-2.3.1.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="be29b24233711c419ce935aa0a1b12ebc49d1c9a">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/firebase-client-android-2.3.1_95e513c6bb4e4aabe3417c3ff300da3817b630d3/classes.dex" />
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-android-2.3.1_1051f3b72e9d14fd57aaf2a1b97e77f867cda947\classes.dex" />
     </item>
     <item
-        jar="/Users/jakubkalinowski/.gradle/caches/modules-2/files-2.1/com.firebase/tubesock/0.0.11/d37cb67277928cf59344b4196af8d9cee1f1a27c/tubesock-0.0.11.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/tubesock-0.0.11_f7a2591e02e350c0898b0e6b77b827d8a92114c0/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.0.0-alpha2/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="bf5aa3b026d5b5fd9f4ab5e8cf13499b9e016dfb">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.0.0-alpha2_7bd088bc5b87b223bf7ddc9d4b95f6f81773b6e7/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="cf6a60833d33edfa5eefac78f480460d32e2bdea">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_03524c2dfd87460df0588a8b3a83521fa895640d/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.3.0_0ed7b2470a7ac23783ec9edd092f76a031df1199/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.0.0-alpha2/jars/classes.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="df7f6513d6e2aaa302bbac654807c6129b517090">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.0.0-alpha2_a55b053eed4c1da19af57b0f115203b5d5860721/classes.dex" />
-    </item>
-    <item
-        jar="/Users/jakubkalinowski/.gradle/caches/modules-2/files-2.1/com.firebase/firebase-client-jvm/2.3.1/4d53b7d6983247af02b8fe7e4228fff555a5e828/firebase-client-jvm-2.3.1.jar"
+        jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/firebase-client-jvm-2.3.1_c5a6b15f52a8062289e92b50f0612c7ef0c94278/classes.dex" />
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.3.1_f48ffdfcd65120346dd4119dde419d51fa06e424\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\jars\libs\internal_impl-24.0.0-alpha2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e460bc069dfd21d22770cf2a2370c9021b9c98a2">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0-alpha2_9eb5e2b1fff40dc0694fc69a9511ab1b25817e00\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.2.2_0b24f573a17f3201db5d2d915a4cacf00a526c26\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0-alpha2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="df7f6513d6e2aaa302bbac654807c6129b517090">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-24.0.0-alpha2_8d848263be82ae7bc294f8a5583320957157d3f5\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-databind\2.2.2\3c8f6018eaa72d43b261181e801e6f8676c16ef6\jackson-databind-2.2.2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3c8f6018eaa72d43b261181e801e6f8676c16ef6">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.2.2_305b92c89941372161eb266a5a07232a0e80cdca\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9e6a73dfb0546ef58281c71fc0f1483f7c36da29">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_225cc40d989b9eb37e8e555ecc30dc21ffaadaa2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="32ab8bede8cd600f25a5bb3fe15068c81c8910dc">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0-alpha2_0a1b595da41c3d4fdf951c68975bd3cc683b2c09\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0-alpha2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="bf5aa3b026d5b5fd9f4ab5e8cf13499b9e016dfb">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-24.0.0-alpha2_a8d2ed4d7cd858fad4016e8e283644ce5a509625\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\24.0.0-alpha2\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="661a632c3b434991d6364690cbe0f786371101cc">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0-alpha2_13d84336136473ec9ca402017093d0f2ef172cb6\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_78ab51a066173be3356fc64ae4c87c06f2260f1d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d37cb67277928cf59344b4196af8d9cee1f1a27c">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\tubesock-0.0.11_a55bd8a0fa33cb7ce0804fae948aec74f1a1effe\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha2\support-annotations-24.0.0-alpha2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8071e1e6cd07e9253720313d6c14286a7ee424e0">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0-alpha2_256ddd98cb18439b6fc09fd25cff45739f58af5f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-23.3.0_1c6969d086b0078201eb9fa08d57ca32edcb5a7c\classes.dex" />
     </item>
 
 </items>
