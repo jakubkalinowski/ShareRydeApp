@@ -5,7 +5,7 @@
         jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="09b6fdfaf6692773369c51593ed2986ff14e447c">
+        sha1="a9035b98ad3ac2c310e784a3ddd5c4554df19778">
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7b6a7d0a91b37bdc893d14bbfab524efd3c9c9ac\classes.dex" />
     </item>
     <item
@@ -61,7 +61,7 @@
         jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="9e6a73dfb0546ef58281c71fc0f1483f7c36da29">
+        sha1="794fcafd9ada9cafa483b5bd86d0becfc27f8872">
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_225cc40d989b9eb37e8e555ecc30dc21ffaadaa2\classes.dex" />
     </item>
     <item

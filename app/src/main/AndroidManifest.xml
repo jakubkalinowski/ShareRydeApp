@@ -37,6 +37,9 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".registerActivity" />
+        <activity android:name=".PassengerActivity"/>
+        <activity android:name=".DriverActivity"/>
+
     </application>
 
 </manifest>
