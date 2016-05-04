@@ -1,35 +1,129 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.jakubkalinowski.sharerydeapp.MainActivity">
+    tools:context="com.example.jakubkalinowski.sharerydeapp.MainActivity"
+    android:background="#ffffff">
 
     <TextView
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Welcome"
-        android:id="@+id/tvWelcomeMSG" />
+        android:text="ShareRyde"
+        android:id="@+id/logoText"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="#ff0d00"
+        android:textStyle="bold|italic" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Main Menu"
+        android:id="@+id/textView"
+        android:layout_below="@+id/logoText"
+        android:layout_centerHorizontal="true"
+        android:textSize="24dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textColor="#2833d8"
+        android:layout_marginTop="10dp"
+        android:gravity="center" />
+
+    <ToggleButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Status"
+        android:id="@+id/statusButton"
+        android:layout_gravity="center_horizontal"
+        android:checked="false"
+        android:enabled="false"
+        android:textOff="Click to be a Driver"
+        android:textOn="Click to be a Passenger"
+        android:textSize="20dp"
+        android:textColor="#ffffff"
+        android:background="#ff0000" />
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Request a Ride"
-        android:id="@+id/bRequestRide"
-        android:layout_below="@+id/tvWelcomeMSG"
+        android:id="@+id/requestButton"
+        android:layout_below="@+id/logoText"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="158dp" />
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="#171aec"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:onClick="rideRequest"/>
 
     <Button
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MAKE A PAYMENT"
+        android:id="@+id/paymentButton"
+        android:background="#171aec"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:onClick="processPayment"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT SCHEDULE"
+        android:id="@+id/scheduleButton"
+        android:layout_below="@+id/profileButton"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="#171aec"
+        android:layout_marginTop="20dp"
+        android:onClick="editSchedule"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="EDIT PROFILE"
+        android:id="@+id/profileButton"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:textSize="20dp"
+        android:background="#171aec"
+        android:textColor="#ffffff"
+        android:layout_marginTop="20dp"
+        android:onClick="editProfile"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SETTINGS"
+        android:id="@+id/settingsButton"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="#171aec"
+        android:layout_marginTop="20dp"
+        android:onClick="settings"/>
+
+    <Button
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Offer a Ride"
-        android:id="@+id/bOfferRide"
+        android:id="@+id/offerButton"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:background="#171aec" />
 
-</RelativeLayout>
+</LinearLayout>

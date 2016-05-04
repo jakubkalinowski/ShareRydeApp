@@ -31,35 +31,19 @@
                 android:textStyle="bold"/>
 
             <android.support.design.widget.TextInputLayout
-                android:id="@+id/first_name_textInput"
+                android:id="@+id/fullName_textInput"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp">
 
                 <EditText
-                    android:id="@+id/first_name"
+                    android:id="@+id/fullName"
                     android:layout_width="fill_parent"
                     android:layout_height="wrap_content"
                     android:ems="10"
-                    android:hint="First Name"
+                    android:hint="Full Name"
                     android:inputType="textPersonName"/>
             </android.support.design.widget.TextInputLayout>
-
-            <android.support.design.widget.TextInputLayout
-                android:id="@+id/last_name_textInput"
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="2dp">
-
-                <EditText
-                    android:id="@+id/last_name"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content"
-                    android:ems="10"
-                    android:hint="Last Name"
-                    android:inputType="textPersonName"/>
-            </android.support.design.widget.TextInputLayout>
-
 
             <android.support.design.widget.TextInputLayout
                 android:id="@+id/email_address_text_input"
@@ -125,13 +109,33 @@
             </android.support.design.widget.TextInputLayout>
 
 
-            <CheckBox
-                android:layout_width="wrap_content"
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/vehicleTextInput"
+                android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/driver_checkbox"
-                android:checked="true"
-                android:text="Driver"
-                android:theme="@style/MyCheckBox"/>
+                android:layout_marginTop="2dp">
+
+                <EditText
+                    android:id="@+id/vehicle"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Vehicle (Year, Make, Model, Color)" />
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                android:id="@+id/seatesAmountTextInput"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <EditText
+                    android:id="@+id/seatsAmount"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:hint="Amount of seats in the vehicle" />
+            </android.support.design.widget.TextInputLayout>
 
             <Button
                 android:id="@+id/sign_up_button_register_activity"
