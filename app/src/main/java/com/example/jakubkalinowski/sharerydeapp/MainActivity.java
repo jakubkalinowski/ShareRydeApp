@@ -26,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
         offerRide.setOnClickListener(new View.OnClickListener() {
 
             public void onClick (View v){
-                Intent offerRideIntent = new Intent(MainActivity.this, DriverActivity.class);
+                Intent offerRideIntent = new Intent(MainActivity.this, MapsActivity.class);
                 MainActivity.this.startActivity(offerRideIntent);
             }
         });
@@ -34,7 +34,7 @@ public class MainActivity extends AppCompatActivity {
         requestRide.setOnClickListener(new View.OnClickListener() {
 
             public void onClick (View v){
-                Intent requestRideIntent = new Intent(MainActivity.this, PassengerActivity.class);
+                Intent requestRideIntent = new Intent(MainActivity.this, MapsActivity.class);
                 MainActivity.this.startActivity(requestRideIntent);
             }
         });

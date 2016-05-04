@@ -5,7 +5,7 @@
         jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="a9035b98ad3ac2c310e784a3ddd5c4554df19778">
+        sha1="215ea2a153fd80696e6dd91ec824a070bb75287b">
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_7b6a7d0a91b37bdc893d14bbfab524efd3c9c9ac\classes.dex" />
     </item>
     <item
@@ -16,6 +16,118 @@
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-annotations-2.2.2_62dd36faaa72477c6362a72623b447246fbd3f3e\classes.dex" />
     </item>
     <item
+        jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.3.1_f48ffdfcd65120346dd4119dde419d51fa06e424\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="04de44f90606c77f3b28cf44861f306290505aac">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-8.4.0_f37fceac2001546637ae1a96c81ab0feb71d1f90\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9fe026fb4c7fce21bc5142f6e1bdf844f28061ac">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-8.4.0_87d2a6d6d6e8188c7de165965977b7184a348516\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="0194a7409c40de94fb539d4ad9928ec5d47afeb7">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-8.4.0_4b8a99347f42b622d96cddc60ecd528c33196dcd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="724dab60ef9742924c06076c4dda3a12a2c8a7df">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_225cc40d989b9eb37e8e555ecc30dc21ffaadaa2\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8e673cdfadd8f2d98fdb2fda2285c30f6e449782">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-8.4.0_253f9d0ef5f2fe0506c699f5a3e4c669dde869ad\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="e167a34eaca0b31704212f43f9576ea84e05046f">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-8.4.0_aeb3c4ff239c65a9b2368b2591b353ea0e88af4f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="c54246475c1bb64ac6857d1320364bfbfeda2c46">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-8.4.0_39153fd73b59850e5952c37fa985a532281bb7aa\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_78ab51a066173be3356fc64ae4c87c06f2260f1d\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\libs\internal_impl-23.0.0.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="03d38bb042efe3e5ce27ba66b729a9523c36d8fe">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-23.0.0_095c733dd26e036c5ad927554851eb9407dbb315\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-measurement\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="613298b7aa012f121ce542881c0a599ebd8078f2">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-measurement-8.4.0_e3296b20af9f73b9dca2482ccc16cab026d573d8\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b5e7892fb0708e792e0e933c4c0a0ca0ac7831fb">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-8.4.0_b029863d75186ae5130b75811fe90c8e5a9061dd\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha2\support-annotations-24.0.0-alpha2.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="8071e1e6cd07e9253720313d6c14286a7ee424e0">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0-alpha2_256ddd98cb18439b6fc09fd25cff45739f58af5f\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="dfecc4d835cdabcdecf7e95f0d20a3ef1e9d8ef4">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-8.4.0_61aba7bd82474814edce87f9ae9bbf0609ce9fd7\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1c9f35e952b212c843f7bd2c7eec8e82ad95602e">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-8.4.0_285c6065809497652acf21dcd7f9aba926204be8\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="551e78f21acf69ebfb489c0e79647824c838013e">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-8.4.0_22648cbac3e01f71c56ea20c74ad60909fdad87c\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-android\2.3.1\be29b24233711c419ce935aa0a1b12ebc49d1c9a\firebase-client-android-2.3.1.jar"
         jumboMode="true"
         revision="23.0.2"
@@ -23,11 +135,18 @@
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-android-2.3.1_1051f3b72e9d14fd57aaf2a1b97e77f867cda947\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.firebase\firebase-client-jvm\2.3.1\4d53b7d6983247af02b8fe7e4228fff555a5e828\firebase-client-jvm-2.3.1.jar"
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\8.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="4d53b7d6983247af02b8fe7e4228fff555a5e828">
-        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\firebase-client-jvm-2.3.1_f48ffdfcd65120346dd4119dde419d51fa06e424\classes.dex" />
+        sha1="2d7fe76982677315c4dc4edfb459c8ca718a9d4c">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-8.4.0_a643bb7e0369dc9a124b934012f13c510acda348\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="9cad249cf62751a323d9af568caf12284b7d6062">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-8.4.0_4b0e734129afac5fc3e6864b728804da14d1a6e2\classes.dex" />
     </item>
     <item
         jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\jars\libs\internal_impl-24.0.0-alpha2.jar"
@@ -37,11 +156,46 @@
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0-alpha2_9eb5e2b1fff40dc0694fc69a9511ab1b25817e00\classes.dex" />
     </item>
     <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="1a78298e7724d5440d210bcb946b3493250d354d">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-8.4.0_fac61e8a6e6c453f794724cb73e5b45335416f6e\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\23.0.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="d358b3dd49a7c67844622dcbc9cf4339e13952ce">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-23.0.0_69ae665c763273591cd33d02859d266f263faf7a\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="fef2b3e4b6b1b0e5fe7b69fa137a5fa55a3182ab">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-8.4.0_4b088a5e402c10402c7870e999241c179bcf9d5c\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="08d34b2d135c1cc96ab506fd8bf6916d1e2f391a">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-8.4.0_bf2a289f93a3fadb4f9fa4ce971f383a0a041a9d\classes.dex" />
+    </item>
+    <item
         jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.fasterxml.jackson.core\jackson-core\2.2.2\d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b\jackson-core-2.2.2.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="d20be6a5ddd6f8cfd36ebf6dea329873a1c41f1b">
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-core-2.2.2_0b24f573a17f3201db5d2d915a4cacf00a526c26\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b36f30ac5ee5d5214f4b1e2ac49f11889d58e71a">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-8.4.0_6e33028ffde07c05ff9ac108a93385d90d04d556\classes.dex" />
     </item>
     <item
         jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\24.0.0-alpha2\jars\classes.jar"
@@ -58,18 +212,25 @@
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\jackson-databind-2.2.2_305b92c89941372161eb266a5a07232a0e80cdca\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="794fcafd9ada9cafa483b5bd86d0becfc27f8872">
-        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_225cc40d989b9eb37e8e555ecc30dc21ffaadaa2\classes.dex" />
-    </item>
-    <item
         jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\support-v4\24.0.0-alpha2\jars\classes.jar"
         jumboMode="true"
         revision="23.0.2"
         sha1="32ab8bede8cd600f25a5bb3fe15068c81c8910dc">
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-24.0.0-alpha2_0a1b595da41c3d4fdf951c68975bd3cc683b2c09\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="966e5771a5a2ebfb31bf00d7cd6cd2546d245517">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-8.4.0_e5deadd1709edcc5284a9f67ae6e2890dbc55f64\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="3a364cc6b698d1b3b2d284f64618daaa7fe77ddf">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-8.4.0_28cd840a417f0932f9c99255f43d331c0c90162f\classes.dex" />
     </item>
     <item
         jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\24.0.0-alpha2\jars\classes.jar"
@@ -86,11 +247,25 @@
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-24.0.0-alpha2_13d84336136473ec9ca402017093d0f2ef172cb6\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\design\23.3.0\jars\classes.jar"
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\8.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
-        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-23.3.0_78ab51a066173be3356fc64ae4c87c06f2260f1d\classes.dex" />
+        sha1="a8412b654dab86d57bf90683367488211c8a81f1">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-8.4.0_6978c5869f73943dbf86b0b183575de52f383228\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="b82b8e847173c28efffcd291b2a0b1ae9ad17fa4">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-8.4.0_7c76237b698803b284b2a37c8381e17ee7e5eb42\classes.dex" />
+    </item>
+    <item
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\8.4.0\jars\classes.jar"
+        jumboMode="true"
+        revision="23.0.2"
+        sha1="f2df436a8f02ce7e4d7d209671fc45f97c470f0e">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-8.4.0_191b50805628432610487cd21bb7e158d4730e5d\classes.dex" />
     </item>
     <item
         jar="C:\Users\Roya\.gradle\caches\modules-2\files-2.1\com.firebase\tubesock\0.0.11\d37cb67277928cf59344b4196af8d9cee1f1a27c\tubesock-0.0.11.jar"
@@ -100,11 +275,11 @@
         <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\tubesock-0.0.11_a55bd8a0fa33cb7ce0804fae948aec74f1a1effe\classes.dex" />
     </item>
     <item
-        jar="C:\Users\Roya\AppData\Local\Android\sdk\extras\android\m2repository\com\android\support\support-annotations\24.0.0-alpha2\support-annotations-24.0.0-alpha2.jar"
+        jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appindexing\8.4.0\jars\classes.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="8071e1e6cd07e9253720313d6c14286a7ee424e0">
-        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-24.0.0-alpha2_256ddd98cb18439b6fc09fd25cff45739f58af5f\classes.dex" />
+        sha1="65d086ee9daaf87b5af62ad24471edafa433354c">
+        <dex dex="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appindexing-8.4.0_01c1a8407515317593336e137f4bd8e474bb26a7\classes.dex" />
     </item>
     <item
         jar="C:\Users\Roya\Documents\GitHub\ShareRydeApp\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\23.3.0\jars\classes.jar"
