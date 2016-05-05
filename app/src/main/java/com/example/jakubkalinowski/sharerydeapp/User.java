@@ -1,7 +1,5 @@
 package com.example.jakubkalinowski.sharerydeapp;
 
-import java.util.HashMap;
-
 public class User {
     private String fullName;
     private String emailAddress;
@@ -10,8 +8,8 @@ public class User {
     private String vehicle;
     private String seatsAmount;
     private String status;
-    private HashMap<String, String> arrivals;
-    private HashMap<String, String> departures;
+//    private HashMap<String, String> arrivals;
+//    private HashMap<String, String> departures;
     private int wallet = 100;
 
 //    private ToggleButton status;
@@ -19,8 +17,7 @@ public class User {
     public User(){}
 
     public User(String fullName, String emailAddress, String password, String address,
-                String vehicle, String seatsAmount, String status,
-                HashMap<String, String> arrivals, HashMap<String, String> departures, int wallet){
+                String vehicle, String seatsAmount, String status, int wallet){
         this.fullName = fullName;
         this.emailAddress = emailAddress;
         this.password = password;
@@ -28,26 +25,26 @@ public class User {
         this.vehicle = vehicle;
         this.seatsAmount = seatsAmount;
         this.status = status;
-        this.arrivals = arrivals;
-        this.departures = departures;
+//        this.arrivals = arrivals;
+//        this.departures = departures;
         this.wallet = wallet;
     }
 
-    public HashMap<String, String> getArrivals() {
-        return arrivals;
-    }
-
-    public void setArrivals(HashMap<String, String> arrivals) {
-        this.arrivals = arrivals;
-    }
-
-    public HashMap<String, String> getDepartures() {
-        return departures;
-    }
-
-    public void setDepartures(HashMap<String, String> departures) {
-        this.departures = departures;
-    }
+//    public HashMap<String, String> getArrivals() {
+//        return arrivals;
+//    }
+//
+//    public void setArrivals(HashMap<String, String> arrivals) {
+//        this.arrivals = arrivals;
+//    }
+//
+//    public HashMap<String, String> getDepartures() {
+//        return departures;
+//    }
+//
+//    public void setDepartures(HashMap<String, String> departures) {
+//        this.departures = departures;
+//    }
 
     public String getStatus() {
         return status;

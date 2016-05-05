@@ -35,16 +35,11 @@
         android:layout_marginTop="10dp"
         android:gravity="center" />
 
-    <ToggleButton
+    <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Status"
         android:id="@+id/statusButton"
         android:layout_gravity="center_horizontal"
-        android:checked="false"
-        android:enabled="false"
-        android:textOff="Click to be a Driver"
-        android:textOn="Click to be a Passenger"
         android:textSize="20dp"
         android:textColor="#ffffff"
         android:background="#ff0000" />
@@ -79,19 +74,6 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="EDIT SCHEDULE"
-        android:id="@+id/scheduleButton"
-        android:layout_below="@+id/profileButton"
-        android:layout_centerHorizontal="true"
-        android:textColor="#ffffff"
-        android:textSize="20dp"
-        android:background="#171aec"
-        android:layout_marginTop="20dp"
-        android:onClick="editSchedule"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:text="EDIT PROFILE"
         android:id="@+id/profileButton"
         android:layout_below="@+id/textView"
@@ -105,25 +87,12 @@
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="SETTINGS"
-        android:id="@+id/settingsButton"
+        android:text="LOGOUT"
+        android:id="@+id/logoutButton"
         android:textColor="#ffffff"
         android:textSize="20dp"
         android:background="#171aec"
         android:layout_marginTop="20dp"
-        android:onClick="settings"/>
-
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Offer a Ride"
-        android:id="@+id/offerButton"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:textColor="#ffffff"
-        android:textSize="20dp"
-        android:background="#171aec" />
+        android:onClick="logout"/>
 
 </LinearLayout>
