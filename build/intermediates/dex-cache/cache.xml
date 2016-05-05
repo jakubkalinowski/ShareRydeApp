@@ -1,12 +1,2 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
-
-    <item
-        jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="23.0.2"
-        sha1="9cd94c78891ce6a8073fe5da4f715c796e45a031">
-        <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_03524c2dfd87460df0588a8b3a83521fa895640d/classes.dex" />
-    </item>
-
-</items>
+<items version="2" />

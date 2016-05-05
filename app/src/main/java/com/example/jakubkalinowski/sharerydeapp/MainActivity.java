@@ -59,7 +59,7 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         mStatusButton = (ToggleButton) findViewById(R.id.statusButton);
         mRequestButton = (Button) findViewById(R.id.requestButton);
         mPaymentButton = (Button) findViewById(R.id.paymentButton);
-        mProfileButton = (Button) findViewById(R.id.paymentButton);
+        mProfileButton = (Button) findViewById(R.id.profileButton);
         mScheduleButton = (Button) findViewById(R.id.scheduleButton);
         mSettingsButton = (Button) findViewById(R.id.settingsButton);
 
@@ -68,10 +68,10 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
          * user requests a ride
          */
         mRequestButton.setOnClickListener(new View.OnClickListener() {
-
+            @Override
             public void onClick(View v) {
-                Intent requestRideIntent = new Intent(MainActivity.this, MapsActivity.class);
-                MainActivity.this.startActivity(requestRideIntent);
+                Intent startSignUp = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(startSignUp);
             }
         });
 
@@ -82,8 +82,20 @@ public class MainActivity extends AppCompatActivity implements CompoundButton.On
         mScheduleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent switchScreen = new Intent(MainActivity.this, MemberScheduleActivity.class);
-                MainActivity.this.startActivity(switchScreen);
+                Intent startSignUp = new Intent(MainActivity.this, MemberScheduleActivity.class);
+                startActivity(startSignUp);
+            }
+        });
+
+        /**
+         * Action for 'mPaymentButton
+         * User enters Payments Screen
+         */
+        mPaymentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent startSignUp = new Intent(MainActivity.this, PaymentActivity.class);
+                startActivity(startSignUp);
             }
         });
 

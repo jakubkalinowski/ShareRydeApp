@@ -16,6 +16,7 @@ import android.widget.Toast;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 
+import java.util.HashMap;
 import java.util.Map;
 import java.util.regex.Pattern;
 
@@ -33,16 +34,16 @@ public class registerActivity extends AppCompatActivity {
     private EditText mAddress;
     private EditText mVehicle;
     private EditText mSeatsAmount;
-//    private EditText mMondayA;
-//    private EditText mMondayD;
-//    private EditText mTuesdayA;
-//    private EditText mTuesdayD;
-//    private EditText mWednesdayA;
-//    private EditText mWednesdayD;
-//    private EditText mThursdayA;
-//    private EditText mThursdayD;
-//    private EditText mFridayA;
-//    private EditText mFridayD;
+    private EditText mMondayA;
+    private EditText mMondayD;
+    private EditText mTuesdayA;
+    private EditText mTuesdayD;
+    private EditText mWednesdayA;
+    private EditText mWednesdayD;
+    private EditText mThursdayA;
+    private EditText mThursdayD;
+    private EditText mFridayA;
+    private EditText mFridayD;
     private Button mSignUpButton;
 
     //variables for extracting values from components
@@ -53,22 +54,27 @@ public class registerActivity extends AppCompatActivity {
     private String addressInput;
     private String vehicleInput;
     private String seatsAmountInput;
-//    private int mondayAInput;
-//    private int mondayDInput;
-//    private int tuesdayAInput;
-//    private int tuesdayDInput;
-//    private int wednesdayAInput;
-//    private int wednesdayDInput;
-//    private int thursdayAInput;
-//    private int thursdayDInput;
-//    private int fridayAInput;
-//    private int fridayDInput;
+    private String mondayAInput;
+    private String mondayDInput;
+    private String tuesdayAInput;
+    private String tuesdayDInput;
+    private String wednesdayAInput;
+    private String wednesdayDInput;
+    private String thursdayAInput;
+    private String thursdayDInput;
+    private String fridayAInput;
+    private String fridayDInput;
     private String statusCheck;
+    private HashMap<String, String> arrivalsInput;
+    private HashMap<String, String> departuresInput;
+    private int walletInput = 100;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
+
+
 
 
         //this part is for hint animation
@@ -78,16 +84,16 @@ public class registerActivity extends AppCompatActivity {
         TextInputLayout repeatPasswordWrapper = (TextInputLayout) findViewById(R.id.repeat_password_textInput);
         TextInputLayout addressWrapper = (TextInputLayout) findViewById(R.id.address_textInput);
         TextInputLayout vehicleWrapper = (TextInputLayout) findViewById(R.id.vehicleTextInput);
-//        TextInputLayout mondayAWrapper = (TextInputLayout) findViewById(R.id.mondayATextInput);
-//        TextInputLayout mondayDWrapper = (TextInputLayout) findViewById(R.id.mondayDTextInput);
-//        TextInputLayout tuesdayAWrapper = (TextInputLayout) findViewById(R.id.tuesdayATextInput);
-//        TextInputLayout tuesdayDWrapper = (TextInputLayout) findViewById(R.id.tuesdayDTextInput);
-//        TextInputLayout wednesdayAWrapper = (TextInputLayout) findViewById(R.id.wednesdayATextInput);
-//        TextInputLayout wednesdayDWrapper = (TextInputLayout) findViewById(R.id.wednesdayDTextInput);
-//        TextInputLayout thursdayAWrapper = (TextInputLayout) findViewById(R.id.thursdayATextInput);
-//        TextInputLayout thursdayDWrapper = (TextInputLayout) findViewById(R.id.thursdayDTextInput);
-//        TextInputLayout fridayAWrapper = (TextInputLayout) findViewById(R.id.fridayATextInput);
-//        TextInputLayout fridayDWrapper = (TextInputLayout) findViewById(R.id.fridayDTextInput);
+        TextInputLayout mondayAWrapper = (TextInputLayout) findViewById(R.id.mondayATextInput);
+        TextInputLayout mondayDWrapper = (TextInputLayout) findViewById(R.id.mondayDTextInput);
+        TextInputLayout tuesdayAWrapper = (TextInputLayout) findViewById(R.id.tuesdayATextInput);
+        TextInputLayout tuesdayDWrapper = (TextInputLayout) findViewById(R.id.tuesdayDTextInput);
+        TextInputLayout wednesdayAWrapper = (TextInputLayout) findViewById(R.id.wednesdayATextInput);
+        TextInputLayout wednesdayDWrapper = (TextInputLayout) findViewById(R.id.wednesdayDTextInput);
+        TextInputLayout thursdayAWrapper = (TextInputLayout) findViewById(R.id.thursdayATextInput);
+        TextInputLayout thursdayDWrapper = (TextInputLayout) findViewById(R.id.thursdayDTextInput);
+        TextInputLayout fridayAWrapper = (TextInputLayout) findViewById(R.id.fridayATextInput);
+        TextInputLayout fridayDWrapper = (TextInputLayout) findViewById(R.id.fridayDTextInput);
         TextInputLayout seatsAmountWrapper = (TextInputLayout) findViewById(R.id.seatesAmountTextInput);
 
         fullNameWrapper.setHint("Full Name");
@@ -97,16 +103,16 @@ public class registerActivity extends AppCompatActivity {
         addressWrapper.setHint("Address (Street, City, State, Zip Code");
         vehicleWrapper.setHint("Vehicle (Year, Make, Model, Color");
         seatsAmountWrapper.setHint("Amount of seats in the vehicle");
-//        mondayAWrapper.setHint("Time you need to be at school");
-//        mondayDWrapper.setHint("Time you need to leave school");
-//        tuesdayAWrapper.setHint("Time you need to be at school");
-//        tuesdayDWrapper.setHint("Time you need to leave school");
-//        wednesdayAWrapper.setHint("Time you need to be at school");
-//        wednesdayDWrapper.setHint("Time you need to leave school");
-//        thursdayAWrapper.setHint("Time you need to be at school");
-//        thursdayDWrapper.setHint("Time you need to leave school");
-//        fridayAWrapper.setHint("Time you need to be at school");
-//        fridayDWrapper.setHint("Time you need to leave school");
+        mondayAWrapper.setHint("Time you need to be at school on Mondays");
+        mondayDWrapper.setHint("Time you need to leave school on Mondays");
+        tuesdayAWrapper.setHint("Time you need to be at school on Tuesdays");
+        tuesdayDWrapper.setHint("Time you need to leave school on Tuesdays");
+        wednesdayAWrapper.setHint("Time you need to be at school on Wednesdays");
+        wednesdayDWrapper.setHint("Time you need to leave school on Wednesdays");
+        thursdayAWrapper.setHint("Time you need to be at school on Thursdays");
+        thursdayDWrapper.setHint("Time you need to leave school on Thursdays");
+        fridayAWrapper.setHint("Time you need to be at school on Fridays");
+        fridayDWrapper.setHint("Time you need to leave school on Fridays");
 
     }
 
@@ -124,16 +130,16 @@ public class registerActivity extends AppCompatActivity {
         mVehicle = (EditText) findViewById(R.id.vehicle);
         mSeatsAmount = (EditText) findViewById(R.id.seatsAmount);
         mSignUpButton = (Button) findViewById(R.id.sign_up_button_register_activity);
-//        mMondayA = (EditText) findViewById(R.id.mA);
-//        mMondayD = (EditText) findViewById(R.id.mD);
-//        mTuesdayA = (EditText) findViewById(R.id.tA);
-//        mTuesdayD = (EditText) findViewById(R.id.tD);
-//        mWednesdayA = (EditText) findViewById(R.id.wA);
-//        mWednesdayD = (EditText) findViewById(R.id.wD);
-//        mThursdayA = (EditText) findViewById(R.id.thA);
-//        mThursdayD = (EditText) findViewById(R.id.thD);
-//        mFridayA = (EditText) findViewById(R.id.fA);
-//        mFridayD = (EditText) findViewById(R.id.fD);
+        mMondayA = (EditText) findViewById(R.id.mA);
+        mMondayD = (EditText) findViewById(R.id.mD);
+        mTuesdayA = (EditText) findViewById(R.id.tA);
+        mTuesdayD = (EditText) findViewById(R.id.tD);
+        mWednesdayA = (EditText) findViewById(R.id.wA);
+        mWednesdayD = (EditText) findViewById(R.id.wD);
+        mThursdayA = (EditText) findViewById(R.id.thA);
+        mThursdayD = (EditText) findViewById(R.id.thD);
+        mFridayA = (EditText) findViewById(R.id.fA);
+        mFridayD = (EditText) findViewById(R.id.fD);
         statusCheck = "passenger";
 
 
@@ -157,6 +163,9 @@ public class registerActivity extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(), "SIGN UP Button is clicked", Toast.LENGTH_LONG).show();
 
+                arrivalsInput = new HashMap<String, String>();
+                departuresInput = new HashMap<String, String>();
+
                 Boolean isExistingUsername = false;
                 fullNameInput = mFullName.getText().toString();
                 emailInput = mEmailAddress.getText().toString();
@@ -165,9 +174,33 @@ public class registerActivity extends AppCompatActivity {
                 addressInput = mAddress.getText().toString();
                 vehicleInput = mVehicle.getText().toString();
                 seatsAmountInput = mSeatsAmount.getText().toString();
-//                arrivals =
 
-                final User newUser = new User(fullNameInput, emailInput, passwordInput, addressInput, vehicleInput, seatsAmountInput, statusCheck);
+                mondayAInput = mMondayA.getText().toString();
+                mondayDInput = mMondayD.getText().toString();
+                tuesdayAInput = mTuesdayA.getText().toString();
+                tuesdayDInput = mTuesdayD.getText().toString();
+                wednesdayAInput = mWednesdayA.getText().toString();
+                wednesdayDInput = mWednesdayD.getText().toString();
+                thursdayAInput = mThursdayA.getText().toString();
+                thursdayDInput = mThursdayD.getText().toString();
+                fridayAInput = mFridayA.getText().toString();
+                fridayDInput = mFridayD.getText().toString();
+
+
+                arrivalsInput.put("Monday",mondayAInput);
+                arrivalsInput.put("Tuesday",tuesdayAInput);
+                arrivalsInput.put("Wednesday",wednesdayAInput);
+                arrivalsInput.put("Thursday",thursdayAInput);
+                arrivalsInput.put("Friday",fridayAInput);
+
+                departuresInput.put("Monday",mondayDInput);
+                departuresInput.put("Tuesday",tuesdayDInput);
+                departuresInput.put("Wednesday",wednesdayDInput);
+                departuresInput.put("Thursday",thursdayDInput);
+                departuresInput.put("Friday",fridayDInput);
+
+
+                final User newUser = new User(fullNameInput, emailInput, passwordInput, addressInput, vehicleInput, seatsAmountInput, statusCheck, arrivalsInput, departuresInput, walletInput);
 
                 ref.createUser(newUser.getEmailAddress(), newUser.getPassword(), new Firebase.ValueResultHandler<Map<String, Object>>() {
                     @Override
