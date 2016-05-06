@@ -8,7 +8,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.firebase.client.Firebase;
-import com.firebase.client.Query;
 
 public class MainActivity extends AppCompatActivity  {
 
@@ -23,7 +22,7 @@ public class MainActivity extends AppCompatActivity  {
     private Button mLogoutButton;
 
     //variables for extracting values from components
-    private Boolean status = false;
+    private String status = "passenger";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,7 +60,9 @@ public class MainActivity extends AppCompatActivity  {
         mLogoutButton = (Button) findViewById(R.id.logoutButton);
 
 //        find = find.getText().toString();
-        Query queryRef = ref.orderByChild("email");
+ //       Query queryRef = ref.orderByChild("email");
+
+       // var authData = ref.getAuth();
 
         /**
          * Populate the button with user status fetched from db
@@ -128,7 +129,7 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
 
-                if (status == true) {
+                if (status == "") {
                     mStatusButton.setText("Switch to a Passenger");
 
                     Firebase userRef = ref.child("users");
