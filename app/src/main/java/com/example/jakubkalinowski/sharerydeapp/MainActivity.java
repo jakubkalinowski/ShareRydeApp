@@ -3,6 +3,7 @@ package com.example.jakubkalinowski.sharerydeapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -16,6 +17,8 @@ import com.firebase.client.FirebaseError;
 public class MainActivity extends AppCompatActivity  {
 
     //Firebase Reference
+    FindLocation fl = new FindLocation();
+    registerActivity ra = new registerActivity();
     Firebase ref = new Firebase("https://shareryde.firebaseio.com/");
     AuthData authData;
 
@@ -50,7 +53,10 @@ public class MainActivity extends AppCompatActivity  {
 //        });
 
 //
-    }
+
+
+
+    }// end of oncreate
 
     @Override
     protected void onStart() {
@@ -75,8 +81,8 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-                System.out.println("Status: " + dataSnapshot.child())
-                System.out.println("Status: " + dataSnapshot.child(authData.getUid().toString() + "/status").getValue(ref.child(authData.getUid().toString()).child("/status"));
+//                System.out.println("Status: " + dataSnapshot.child());
+//                System.out.println("Status: " + dataSnapshot.child(authData.getUid().toString() + "/status").getValue(ref.child(authData.getUid().toString()).child("/status"));
             }
 
             @Override
