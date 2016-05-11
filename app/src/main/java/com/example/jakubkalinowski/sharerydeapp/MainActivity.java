@@ -3,7 +3,6 @@ package com.example.jakubkalinowski.sharerydeapp;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
@@ -17,8 +16,6 @@ import com.firebase.client.FirebaseError;
 public class MainActivity extends AppCompatActivity {
 
     //Firebase Reference
-    FindLocation fl = new FindLocation();
-    registerActivity ra = new registerActivity();
     Firebase ref = new Firebase("https://shareryde.firebaseio.com/");
     AuthData authData;
 
@@ -47,16 +44,7 @@ public class MainActivity extends AppCompatActivity {
 //                MainActivity.this.startActivity(requestRideIntent);
 //            }
 //        });
-<<<<<<< HEAD
     }
-=======
-
-//
-
-
-
-    }// end of oncreate
->>>>>>> ladimer_other
 
     @Override
     protected void onStart() {

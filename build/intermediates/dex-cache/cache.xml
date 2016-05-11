@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" />
+<items version="2" >
 
-<<<<<<< HEAD
     <item
         jar="/Users/jakubkalinowski/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-annotations/2.2.2/285cb9c666f0f0f3dd8a1be04e1f457eb7b15113/jackson-annotations-2.2.2.jar"
         jumboMode="true"
@@ -139,7 +138,7 @@
         jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="b09ad552ef054907c44ec8036db6e58a390a9c00">
+        sha1="187c3df4a8f61af91eeeaf3fa401ce6ff6b37215">
         <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_8b90c4b1fe858149aadef13c9f3c5617e25e05e1/classes.dex" />
     </item>
     <item
@@ -230,7 +229,7 @@
         jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="c4f1fd972f45b45a6e26ef294a99afd2d109b301">
+        sha1="92cfe501468c97f2fa5ddeb48047d078173273ea">
         <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_03524c2dfd87460df0588a8b3a83521fa895640d/classes.dex" />
     </item>
     <item
@@ -291,5 +290,3 @@
     </item>
 
 </items>
-=======
->>>>>>> ladimer_other
