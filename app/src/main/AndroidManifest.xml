@@ -63,7 +63,6 @@
             android:name=".MapsActivity"
             android:label="@string/title_activity_maps" />
         <activity android:name=".MemberScheduleActivity" />
-        <activity android:name=".CustomAdapter" />
         <activity android:name=".PaymentActivity"></activity>
     </application>
 

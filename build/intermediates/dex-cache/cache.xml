@@ -138,7 +138,7 @@
         jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="de356cf8c221e2b0ac235ad33a5e9540e1535b77">
+        sha1="b09ad552ef054907c44ec8036db6e58a390a9c00">
         <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_8b90c4b1fe858149aadef13c9f3c5617e25e05e1/classes.dex" />
     </item>
     <item
@@ -229,7 +229,7 @@
         jar="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
         jumboMode="true"
         revision="23.0.2"
-        sha1="9e2a23a568eae34a67b26a11e1f6182f98214900">
+        sha1="c4f1fd972f45b45a6e26ef294a99afd2d109b301">
         <dex dex="/Users/jakubkalinowski/git/ShareRydeApp/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_03524c2dfd87460df0588a8b3a83521fa895640d/classes.dex" />
     </item>
     <item

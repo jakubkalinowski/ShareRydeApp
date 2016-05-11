@@ -13,7 +13,7 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 
-public class MainActivity extends AppCompatActivity  {
+public class MainActivity extends AppCompatActivity {
 
     //Firebase Reference
     Firebase ref = new Firebase("https://shareryde.firebaseio.com/");
@@ -34,22 +34,16 @@ public class MainActivity extends AppCompatActivity  {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        //final EditText etUsername = (EditText) findViewById(R.id.etUsername);
-
         final TextView welcomeMessage = (TextView) findViewById(R.id.logoText);
 
-//        final Button offerRide = (Button) findViewById(R.id.bOfferRide);
-
-
-//        offerRide.setOnClickListener(new View.OnClickListener() {
+//
+//        requestRide.setOnClickListener(new View.OnClickListener() {
 //
 //            public void onClick(View v) {
-//                Intent offerRideIntent = new Intent(MainActivity.this, MapsActivity.class);
-//                MainActivity.this.startActivity(offerRideIntent);
+//                Intent requestRideIntent = new Intent(MainActivity.this, MapsActivity.class);
+//                MainActivity.this.startActivity(requestRideIntent);
 //            }
 //        });
-
-//
     }
 
     @Override
@@ -70,13 +64,13 @@ public class MainActivity extends AppCompatActivity  {
          * Populate the button with user status fetched from db
          */
 
-       // mStatusButton.setText()
+        // mStatusButton.setText()
         ref.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-                System.out.println("Status: " + dataSnapshot.child())
-                System.out.println("Status: " + dataSnapshot.child(authData.getUid().toString() + "/status").getValue(ref.child(authData.getUid().toString()).child("/status"));
+//                System.out.println("Status: " + dataSnapshot.child());
+//                System.out.println("Status: " + dataSnapshot.child(authData.getUid().toString() + "/status").getValue(ref.child(authData.getUid().toString()).child("/status"));
             }
 
             @Override
@@ -100,14 +94,17 @@ public class MainActivity extends AppCompatActivity  {
             }
         });
 
-//        if (temp.equals("passenger")) {
-//            mStatusButton.setText("Switch to Driver");
-//        }
-//        else {
-//            mStatusButton.setText("Switch to Driver");
-//        }
-
-
+        /**
+         * Action for 'mPaymentButton
+         * User enters Payments Screen
+         */
+        mPaymentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, PaymentActivity.class);
+                startActivity(i);
+            }
+        });
 
 
         /**
@@ -117,20 +114,8 @@ public class MainActivity extends AppCompatActivity  {
         mRequestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startSignUp = new Intent(MainActivity.this, MapsActivity.class);
-                startActivity(startSignUp);
-            }
-        });
-
-        /**
-         * Action for 'mPaymentButton
-         * User enters Payments Screen
-         */
-        mPaymentButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent startSignUp = new Intent(MainActivity.this, PaymentActivity.class);
-                startActivity(startSignUp);
+                Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(i);
             }
         });
 
@@ -161,19 +146,17 @@ public class MainActivity extends AppCompatActivity  {
                 }
             }
         });
-
         /**
          * Action for 'mLogoutButton'
          */
         mLogoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent startSignUp = new Intent(MainActivity.this, LoginActivity.class);
-                startActivity(startSignUp);
+                Intent i = new Intent(MainActivity.this, LoginActivity.class);
+                startActivity(i);
             }
         });
     }
-
 
     /**
      * Action for changing status
@@ -185,13 +168,12 @@ public class MainActivity extends AppCompatActivity  {
 //        if (isChecked) {
 //                    Firebase userRef = ref.child("users");
 //                    userRef.child("status").setValue("driver");
-//            System.out.println("Driver");
 //
 //        } else {
 ////                    Firebase userRef = ref.child("users");
 ////                    userRef.child("status").setValue("passenger");
 //            ref.child("users").child("status").setValue("driver");
-//            System.out.println("passenger");
+//
 //        }
 //    }
 
