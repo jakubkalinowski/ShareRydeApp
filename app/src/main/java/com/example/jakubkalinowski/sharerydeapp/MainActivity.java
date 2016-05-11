@@ -7,12 +7,17 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.firebase.client.AuthData;
+import com.firebase.client.ChildEventListener;
+import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
+import com.firebase.client.FirebaseError;
 
 public class MainActivity extends AppCompatActivity  {
 
     //Firebase Reference
     Firebase ref = new Firebase("https://shareryde.firebaseio.com/");
+    AuthData authData;
 
     //variables for all the components of the activity
     private Button mStatusButton;
@@ -22,7 +27,7 @@ public class MainActivity extends AppCompatActivity  {
     private Button mLogoutButton;
 
     //variables for extracting values from components
-    private String status = "passenger";
+    private boolean status = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,29 +64,41 @@ public class MainActivity extends AppCompatActivity  {
         mProfileButton = (Button) findViewById(R.id.profileButton);
         mLogoutButton = (Button) findViewById(R.id.logoutButton);
 
-//        find = find.getText().toString();
- //       Query queryRef = ref.orderByChild("email");
-
-       // var authData = ref.getAuth();
+        authData = ref.getAuth();
 
         /**
          * Populate the button with user status fetched from db
          */
 
-//        String temp = ;
+       // mStatusButton.setText()
+        ref.addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
 
-//        ref.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void getStatus(DataSnapshot snapshot) {
-//                for (DataSnapshot postSnapshot: snapshot.getChildren()) {
-//
-//                }
-//            }
-//            @Override
-//            public void onCancelled(FirebaseError firebaseError) {
-//                System.out.println("The read failed: " + firebaseError.getMessage());
-//            }
-//        });
+                System.out.println("Status: " + dataSnapshot.child())
+                System.out.println("Status: " + dataSnapshot.child(authData.getUid().toString() + "/status").getValue(ref.child(authData.getUid().toString()).child("/status"));
+            }
+
+            @Override
+            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onChildRemoved(DataSnapshot dataSnapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+
+            }
+
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+
+            }
+        });
 
 //        if (temp.equals("passenger")) {
 //            mStatusButton.setText("Switch to Driver");
@@ -129,18 +146,16 @@ public class MainActivity extends AppCompatActivity  {
             @Override
             public void onClick(View v) {
 
-                if (status == "") {
-                    mStatusButton.setText("Switch to a Passenger");
+                Firebase userRef = ref.child("users");
 
-                    Firebase userRef = ref.child("users");
-                    ref.child("users").child("status").setValue("driver");
+                if (status == true) {
+                    mStatusButton.setText("Switch to a Passenger");
+                    userRef.child(authData.getUid().toString()).child("status").setValue("driver");
 
                     status = false;
                 } else if(status == false) {
                     mStatusButton.setText("Switch to a Driver");
-
-                    Firebase userRef = ref.child("users");
-                    ref.child("users").child("status").setValue("passenger");
+                    userRef.child(authData.getUid().toString()).child("status").setValue("passenger");
 
                     status = true;
                 }

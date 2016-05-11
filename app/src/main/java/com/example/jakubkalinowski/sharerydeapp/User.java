@@ -1,6 +1,13 @@
 package com.example.jakubkalinowski.sharerydeapp;
 
+import com.firebase.client.AuthData;
+import com.firebase.client.Firebase;
+
 public class User {
+    Firebase ref = new Firebase("https://shareryde.firebaseio.com/");
+    Firebase userRef = ref.child("users");
+    AuthData authData;
+
     private String fullName;
     private String emailAddress;
     private String password;
@@ -8,8 +15,6 @@ public class User {
     private String vehicle;
     private String seatsAmount;
     private String status;
-//    private HashMap<String, String> arrivals;
-//    private HashMap<String, String> departures;
     private int wallet = 100;
 
 //    private ToggleButton status;
