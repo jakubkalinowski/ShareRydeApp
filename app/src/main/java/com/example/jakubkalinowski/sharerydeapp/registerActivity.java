@@ -22,7 +22,7 @@ import java.util.regex.Pattern;
 public class registerActivity extends AppCompatActivity {
 
     //Firebase Reference
-    Firebase ref = new Firebase("https://shareryde.firebaseio.com/");
+    public Firebase ref = new Firebase("https://shareryde.firebaseio.com/");
 
 
     //variables for all the components of the activity
@@ -35,6 +35,7 @@ public class registerActivity extends AppCompatActivity {
     private EditText mSeatsAmount;
     private Button mSignUpButton;
 
+    FindLocation fl = new FindLocation();
     //variables for extracting values from components
     private String fullNameInput;
     private String emailInput;
@@ -69,6 +70,10 @@ public class registerActivity extends AppCompatActivity {
         vehicleWrapper.setHint("Vehicle (Year, Make, Model, Color");
         seatsAmountWrapper.setHint("Amount of seats in the vehicle");
 
+    }
+
+    public String  getAddress(){
+        return mAddress.getText().toString();
     }
 
     @Override
@@ -109,6 +114,21 @@ public class registerActivity extends AppCompatActivity {
 
                 Toast.makeText(getApplicationContext(), "SIGN UP Button is clicked", Toast.LENGTH_LONG).show();
 
+<<<<<<< HEAD
+=======
+
+                /// testing getting location.
+                try{
+                    fl.findCoordinates(getAddress());
+                }catch(Exception e){
+                    Log.d("error messaage:", " problem with the address!!");
+                }
+
+
+//                arrivalsInput = new HashMap<String, String>();
+//                departuresInput = new HashMap<String, String>();
+
+>>>>>>> ladimer_other
                 Boolean isExistingUsername = false;
                 fullNameInput = mFullName.getText().toString();
                 emailInput = mEmailAddress.getText().toString();
