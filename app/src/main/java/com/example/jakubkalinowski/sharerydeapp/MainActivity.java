@@ -8,13 +8,7 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.firebase.client.AuthData;
-import com.firebase.client.ChildEventListener;
-import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
-import com.firebase.client.FirebaseError;
-import com.firebase.client.Query;
-
-import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -31,11 +25,13 @@ public class MainActivity extends AppCompatActivity {
 
     //variables for extracting values from components
     private boolean status = false;
+    String userID = ref.getAuth().getUid();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        Firebase.setAndroidContext(this);
 
         final TextView welcomeMessage = (TextView) findViewById(R.id.logoText);
 
@@ -62,42 +58,44 @@ public class MainActivity extends AppCompatActivity {
         mLogoutButton = (Button) findViewById(R.id.logoutButton);
 
         authData = ref.getAuth();
-
+        userID = ref.getAuth().getUid();
         /**
          * Populate the button with user status fetched from db
          */
 
+
+
 //         mStatusButton.setText();
 //        ref.addChildEventListener(new ChildEventListener() {
-        Query query = ref.orderByChild("user").equalTo("597eee31-b743-4aef-95fd-c5dc0fde4f8c");
-        query.addChildEventListener(new ChildEventListener() {
-            @Override
-            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+//            Query query = ref.orderByChild("user").equalTo("597eee31-b743-4aef-95fd-c5dc0fde4f8c");
+//            query.addChildEventListener(new ChildEventListener() {
+//            @Override
+//            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
+////                Map<String, Object> newPost = (Map<String, Object>) dataSnapshot.getValue();
+////                System.out.println("Status: " + newPost.get("status"));
+//            }
+//
+//            @Override
+//            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
 //                Map<String, Object> newPost = (Map<String, Object>) dataSnapshot.getValue();
 //                System.out.println("Status: " + newPost.get("status"));
-            }
-
-            @Override
-            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-                Map<String, Object> newPost = (Map<String, Object>) dataSnapshot.getValue();
-                System.out.println("Status: " + newPost.get("status"));
-            }
-
-            @Override
-            public void onChildRemoved(DataSnapshot dataSnapshot) {
-
-            }
-
-            @Override
-            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-
-            }
-
-            @Override
-            public void onCancelled(FirebaseError firebaseError) {
-
-            }
-        });
+//            }
+//
+//            @Override
+//            public void onChildRemoved(DataSnapshot dataSnapshot) {
+//
+//            }
+//
+//            @Override
+//            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(FirebaseError firebaseError) {
+//
+//            }
+//        });
 
         /**
          * Action for 'mPaymentButton
