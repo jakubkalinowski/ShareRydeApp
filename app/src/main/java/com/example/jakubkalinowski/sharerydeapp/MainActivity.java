@@ -76,12 +76,13 @@ public class MainActivity extends AppCompatActivity {
 
         authData = ref.getAuth();
         userID = ref.getAuth().getUid();
+        Firebase usersRef = ref.child("users");
         /**
          * Populate the button with user status fetched from db
          */
 
-
-
+        mStatusButton.setText(usersRef.child(authData.getUid().toString()).child("status").getKey());
+//        mStatusButton.setText(userID.);
 //         mStatusButton.setText();
 //        ref.addChildEventListener(new ChildEventListener() {
 //            Query query = ref.orderByChild("user").equalTo("597eee31-b743-4aef-95fd-c5dc0fde4f8c");
@@ -180,8 +181,8 @@ public class MainActivity extends AppCompatActivity {
 
     /**
      * Action for changing status
-     * @param buttonView
-     * @param isChecked
+//     * @param buttonView
+//     * @param isChecked
      */
 //    @Override
 //    public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
@@ -196,7 +197,5 @@ public class MainActivity extends AppCompatActivity {
 //
 //        }
 //    }
-
-
 }
 

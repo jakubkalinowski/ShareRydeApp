@@ -15,7 +15,9 @@ public class User {
     private String status;
     private int wallet;
 
-    public User(){}
+    public User() {
+        // necessary for Firebase's deserializer
+    }
 
     public User(String fullName, String emailAddress, String password,
                 String address, String vehicle, String seatsAmount, String status, int walletInput){
@@ -46,49 +48,7 @@ public class User {
     }
 
     public String getEmailAddress() {
-//        Query queryRef = ref.orderByChild("emailAddress");
-//
-//        authData = ref.getAuth();
-//
-//        queryRef.addChildEventListener(new ChildEventListener() {
-//            @Override
-//            public void onChildAdded(DataSnapshot dataSnapshot, String previousChild) {
-//                System.out.println(dataSnapshot.getValue());
-//                Map<String,Object> value = (Map<String, Object>) dataSnapshot.getValue();
-//
-//                emailAddress = String.valueOf(value.get("emailAddress"));
-//
-//                System.out.println("Email is: " + value.get("emailAddress"));//testing
-//
-//            }
-//
-//            @Override
-//            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-//
-//            }
-//
-//            @Override
-//            public void onChildRemoved(DataSnapshot dataSnapshot) {
-//
-//            }
-//
-//            @Override
-//            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(FirebaseError firebaseError) {
-//
-//            }
-
-
-
-//
-//        });
-
         return emailAddress;
-
     }
 
     public void setEmailAddress(String emailAddress) {

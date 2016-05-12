@@ -131,7 +131,7 @@ public class registerActivity extends AppCompatActivity {
         repeatPasswordWrapper.setHint("Repeat Password");
         addressWrapper.setHint("Address (Street, City, State, Zip Code");
         vehicleWrapper.setHint("Vehicle (Year, Make, Model, Color");
-        seatsAmountWrapper.setHint("Amount of seats in the vehicle");
+        seatsAmountWrapper.setHint("Amount of seats available in the vehicle");
 
     }
 
