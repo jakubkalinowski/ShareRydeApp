@@ -118,6 +118,11 @@ public class registerActivity extends AppCompatActivity {
                 vehicleInput = mVehicle.getText().toString();
                 seatsAmountInput = mSeatsAmount.getText().toString();
 
+                if(vehicleInput != null){
+                    DriverActivity dr = new DriverActivity(fullNameInput, addressInput, vehicleInput);
+                }else{
+                    PassengerActivity pa = new PassengerActivity();
+                }
 
                 final User newUser = new User(fullNameInput, emailInput, passwordInput, addressInput, vehicleInput, seatsAmountInput, statusCheck, walletInput);
 

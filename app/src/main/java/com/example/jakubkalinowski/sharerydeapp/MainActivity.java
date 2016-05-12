@@ -13,6 +13,8 @@ import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
 import com.firebase.client.Query;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.location.LocationServices;
 
 import java.util.Map;
 
@@ -39,6 +41,15 @@ public class MainActivity extends AppCompatActivity {
 
         final TextView welcomeMessage = (TextView) findViewById(R.id.logoText);
 
+//        GoogleApiClient.Builder mGoogleApiClient = new GoogleApiClient.Builder(this);
+//       //  Create an instance of GoogleAPIClient.
+//        if (mGoogleApiClient == null) {
+//            mGoogleApiClient = new GoogleApiClient.Builder(this)
+//                    .addConnectionCallbacks(this)
+//                    .addOnConnectionFailedListener(this)
+//                    .addApi(LocationServices.API)
+//                    .build();
+//        }
 //
 //        requestRide.setOnClickListener(new View.OnClickListener() {
 //
