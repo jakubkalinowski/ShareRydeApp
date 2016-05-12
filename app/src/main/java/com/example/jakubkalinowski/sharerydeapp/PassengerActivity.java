@@ -14,6 +14,31 @@ public class PassengerActivity extends AppCompatActivity {
 
     private String name;
     private String address;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public List<PassengerActivity> getPassengersList() {
+        return passengersList;
+    }
+
+    public void setPassengersList(List<PassengerActivity> passengersList) {
+        this.passengersList = passengersList;
+    }
+
     private List<PassengerActivity> passengersList = new ArrayList<>();
 
     protected void onCreate(Bundle savedInstanceState) {

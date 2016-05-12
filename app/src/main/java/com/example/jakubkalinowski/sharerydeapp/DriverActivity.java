@@ -15,6 +15,47 @@ import java.util.List;
 
 public class DriverActivity extends AppCompatActivity {
     private String name;
+
+    public String getAddress() {
+        return address;
+    }
+
+    public void setAddress(String address) {
+        this.address = address;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getVehicle() {
+        return vehicle;
+    }
+
+    public void setVehicle(String vehicle) {
+        this.vehicle = vehicle;
+    }
+
+    public int getNumberOfSeats() {
+        return numberOfSeats;
+    }
+
+    public void setNumberOfSeats(int numberOfSeats) {
+        this.numberOfSeats = numberOfSeats;
+    }
+
+    public List<DriverActivity> getDriversList() {
+        return driversList;
+    }
+
+    public void setDriversList(List<DriverActivity> driversList) {
+        this.driversList = driversList;
+    }
+
     private String address;
     private String vehicle;
     private int numberOfSeats;

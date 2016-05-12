@@ -28,6 +28,27 @@ public class registerActivity extends AppCompatActivity {
     //variables for all the components of the activity
     private EditText mFullName;
     private EditText mEmailAddress;
+
+   public String getSeatsAmountInput(){
+       return seatsAmountInput;
+   }
+
+    public String getFullNameInput() {
+        return fullNameInput;
+    }
+
+    public String getEmailInput() {
+        return emailInput;
+    }
+
+    public String getAddressInput() {
+        return addressInput;
+    }
+
+    public String getVehicleInput() {
+        return vehicleInput;
+    }
+
     private EditText mPassword;
     private EditText mRepeatPassword;
     private EditText mAddress;
@@ -38,13 +59,56 @@ public class registerActivity extends AppCompatActivity {
     //variables for extracting values from components
     private String fullNameInput;
     private String emailInput;
+
+    public void setPasswordInput(String passwordInput) {
+        this.passwordInput = passwordInput;
+    }
+
+    public void setEmailInput(String emailInput) {
+        this.emailInput = emailInput;
+    }
+
+    public void setmSeatsAmount(EditText mSeatsAmount) {
+        this.mSeatsAmount = mSeatsAmount;
+    }
+
+    public void setmVehicle(EditText mVehicle) {
+        this.mVehicle = mVehicle;
+    }
+
+    public void setmAddress(EditText mAddress) {
+        this.mAddress = mAddress;
+    }
+
+    public void setmFullName(EditText mFullName) {
+        this.mFullName = mFullName;
+    }
+
     private String passwordInput;
     private String repeatPasswordInput;
+
     private String addressInput;
     private String vehicleInput;
     private String seatsAmountInput;
     private String statusCheck;
     private int walletInput = 100;
+
+    public void setFullNameInput(String fullNameInput) {
+        this.fullNameInput = fullNameInput;
+    }
+
+    public void setSeatsAmountInput(String seatsAmountInput) {
+        this.seatsAmountInput = seatsAmountInput;
+    }
+
+    public void setAddressInput(String addressInput) {
+        this.addressInput = addressInput;
+    }
+
+    public void setVehicleInput(String vehicleInput) {
+        this.vehicleInput = vehicleInput;
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -119,9 +183,9 @@ public class registerActivity extends AppCompatActivity {
                 seatsAmountInput = mSeatsAmount.getText().toString();
 
                 if(vehicleInput != null){
-                    DriverActivity dr = new DriverActivity(fullNameInput, vehicleInput, Integer.parseInt(seatsAmountInput) , addressInput);
+                    DriverActivity dr = new DriverActivity(getFullNameInput(), getVehicleInput(), Integer.parseInt(getSeatsAmountInput()) , getAddressInput());
                 }else{
-                    PassengerActivity pa = new PassengerActivity();
+                    PassengerActivity pa = new PassengerActivity(getFullNameInput(), getAddressInput());
                 }
 
                 final User newUser = new User(fullNameInput, emailInput, passwordInput, addressInput, vehicleInput, seatsAmountInput, statusCheck, walletInput);
