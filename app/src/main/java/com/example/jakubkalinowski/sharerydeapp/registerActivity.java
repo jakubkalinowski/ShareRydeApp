@@ -119,7 +119,7 @@ public class registerActivity extends AppCompatActivity {
                 seatsAmountInput = mSeatsAmount.getText().toString();
 
                 if(vehicleInput != null){
-                    DriverActivity dr = new DriverActivity(fullNameInput, addressInput, vehicleInput);
+                    DriverActivity dr = new DriverActivity(fullNameInput, vehicleInput, Integer.parseInt(seatsAmountInput) , addressInput);
                 }else{
                     PassengerActivity pa = new PassengerActivity();
                 }
