@@ -12,6 +12,9 @@ import com.firebase.client.ChildEventListener;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
+import com.firebase.client.Query;
+
+import java.util.Map;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -64,18 +67,20 @@ public class MainActivity extends AppCompatActivity {
          * Populate the button with user status fetched from db
          */
 
-        // mStatusButton.setText()
-        ref.addChildEventListener(new ChildEventListener() {
+//         mStatusButton.setText();
+//        ref.addChildEventListener(new ChildEventListener() {
+        Query query = ref.orderByChild("user").equalTo("597eee31-b743-4aef-95fd-c5dc0fde4f8c");
+        query.addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-
-//                System.out.println("Status: " + dataSnapshot.child());
-//                System.out.println("Status: " + dataSnapshot.child(authData.getUid().toString() + "/status").getValue(ref.child(authData.getUid().toString()).child("/status"));
+//                Map<String, Object> newPost = (Map<String, Object>) dataSnapshot.getValue();
+//                System.out.println("Status: " + newPost.get("status"));
             }
 
             @Override
             public void onChildChanged(DataSnapshot dataSnapshot, String s) {
-
+                Map<String, Object> newPost = (Map<String, Object>) dataSnapshot.getValue();
+                System.out.println("Status: " + newPost.get("status"));
             }
 
             @Override

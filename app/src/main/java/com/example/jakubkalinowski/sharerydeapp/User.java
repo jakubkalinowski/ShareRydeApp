@@ -26,7 +26,7 @@ public class User {
         this.vehicle = vehicle;
         this.seatsAmount = seatsAmount;
         this.status = status;
-        this.wallet = wallet;
+        this.wallet = walletInput;
     }
 
     public String getStatus() {
@@ -46,7 +46,49 @@ public class User {
     }
 
     public String getEmailAddress() {
+//        Query queryRef = ref.orderByChild("emailAddress");
+//
+//        authData = ref.getAuth();
+//
+//        queryRef.addChildEventListener(new ChildEventListener() {
+//            @Override
+//            public void onChildAdded(DataSnapshot dataSnapshot, String previousChild) {
+//                System.out.println(dataSnapshot.getValue());
+//                Map<String,Object> value = (Map<String, Object>) dataSnapshot.getValue();
+//
+//                emailAddress = String.valueOf(value.get("emailAddress"));
+//
+//                System.out.println("Email is: " + value.get("emailAddress"));//testing
+//
+//            }
+//
+//            @Override
+//            public void onChildChanged(DataSnapshot dataSnapshot, String s) {
+//
+//            }
+//
+//            @Override
+//            public void onChildRemoved(DataSnapshot dataSnapshot) {
+//
+//            }
+//
+//            @Override
+//            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
+//
+//            }
+//
+//            @Override
+//            public void onCancelled(FirebaseError firebaseError) {
+//
+//            }
+
+
+
+//
+//        });
+
         return emailAddress;
+
     }
 
     public void setEmailAddress(String emailAddress) {
