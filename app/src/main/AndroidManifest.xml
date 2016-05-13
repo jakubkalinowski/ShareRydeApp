@@ -67,7 +67,8 @@
         <activity android:name=".PaymentActivity" />
         <activity android:name=".MessagesActivity" />
         <activity android:name=".ReviewActivity" />
-        <activity android:name=".GPS_Location"></activity>
+        <activity android:name=".GPS_Location" />
+        <activity android:name=".RequestARide"></activity>
     </application>
 
 </manifest>
