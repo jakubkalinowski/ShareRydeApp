@@ -2,6 +2,7 @@ package com.example.jakubkalinowski.sharerydeapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -25,15 +26,17 @@ public class registerActivity extends AppCompatActivity {
     Firebase ref = new Firebase("https://shareryde.firebaseio.com/");
 
 
+    private Handler handler = new Handler();
+    Runnable runnable = null, runnableTimer;
     //variables for all the components of the activity
-    private EditText mFullName;
+    private EditText mFullName, longitude, latitude;
     private EditText mEmailAddress;
     private EditText mPassword;
     private EditText mRepeatPassword;
     private EditText mAddress;
     private EditText mVehicle;
     private EditText mSeatsAmount;
-    private Button mSignUpButton;
+    private Button mSignUpButton,getLongLat;
     private String fullNameInput;
     private String emailInput;
 
@@ -127,7 +130,10 @@ public class registerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
 
+        longitude = (EditText) findViewById(R.id.longitude_id);
+        latitude= (EditText)findViewById(R.id.latitude_id);
         //this part is for hint animation
+        getLongLat = (Button) findViewById(R.id.getGPS_ID);
         TextInputLayout fullNameWrapper = (TextInputLayout) findViewById(R.id.fullName_textInput);
         TextInputLayout emailAddressWrapper = (TextInputLayout) findViewById(R.id.email_address_text_input);
         TextInputLayout passwordWrapper = (TextInputLayout) findViewById(R.id.password_textInput);
@@ -144,7 +150,33 @@ public class registerActivity extends AppCompatActivity {
         vehicleWrapper.setHint("Vehicle (Year, Make, Model, Color");
         seatsAmountWrapper.setHint("Amount of seats available in the vehicle");
 
-    }
+
+        getLongLat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(registerActivity.this, GPS_Location.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        // GPS_Location.longitudeNetwork
+        //GPS_Location.latitudeNetwork
+
+
+        runnableTimer = new Runnable() {
+            @Override
+            public void run() {
+                latitude.setText(Double.toString(GPS_Location.latitudeNetwork));
+                longitude.setText(Double.toString(GPS_Location.longitudeNetwork));
+            }
+        };
+        handler.postDelayed(runnableTimer, 1000* 15);
+
+
+    }// onCreate
+
 
     /**
      * OnStart

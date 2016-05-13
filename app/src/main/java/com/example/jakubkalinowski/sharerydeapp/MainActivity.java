@@ -54,7 +54,7 @@ public class MainActivity extends AppCompatActivity {
 //                MainActivity.this.startActivity(requestRideIntent);
 //            }
 //        });
-    }
+    }//onCreate
 
     @Override
     protected void onStart() {
