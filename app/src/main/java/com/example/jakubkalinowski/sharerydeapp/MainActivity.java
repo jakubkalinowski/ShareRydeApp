@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mProfileButton;
     private Button mLogoutButton;
     private Button mMessagesButton;
+    private Button mReviewButton;
 
     //variables for extracting values from components
     private boolean status = false;
@@ -68,6 +69,7 @@ public class MainActivity extends AppCompatActivity {
         mProfileButton = (Button) findViewById(R.id.profileButton);
         mLogoutButton = (Button) findViewById(R.id.logoutButton);
         mMessagesButton = (Button) findViewById(R.id.messagesButton);
+        mReviewButton = (Button) findViewById(R.id.reviewButton);
 
         authData = ref.getAuth();
         userID = ref.getAuth().getUid();
@@ -75,6 +77,18 @@ public class MainActivity extends AppCompatActivity {
         /**
          * Populate the button with user status fetched from db
          */
+
+        /**
+         * Action for 'mRequestButton'
+         * user requests a ride
+         */
+        mRequestButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(i);
+            }
+        });
 
 
         mStatusButton.setText(usersRef.child(authData.getUid().toString()).child("status").getKey());
@@ -124,7 +138,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         /**
-         * Action for 'mPaymentButton
+         * Action for 'mPaymentButton'
          * User enters Payments Screen
          */
         mPaymentButton.setOnClickListener(new View.OnClickListener() {
@@ -135,15 +149,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         /**
-         * Action for 'mRequestButton'
-         * user requests a ride
+         * Action for 'mReviewButton'
+         * Redirects to review screen
          */
-        mRequestButton.setOnClickListener(new View.OnClickListener() {
+        mReviewButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                Intent i = new Intent(MainActivity.this, ReviewActivity.class);
                 startActivity(i);
             }
         });

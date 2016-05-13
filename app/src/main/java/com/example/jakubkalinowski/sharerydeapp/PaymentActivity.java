@@ -1,5 +1,6 @@
 package com.example.jakubkalinowski.sharerydeapp;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -119,7 +120,8 @@ public class PaymentActivity extends AppCompatActivity {
         submitPayment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-
+                Intent i = new Intent(PaymentActivity.this, MainActivity.class);
+                startActivity(i);
 
                 /**
                  * get the amount entered and subtract it from the user then update the user wallet.(do this to passenger only, not the driver)
