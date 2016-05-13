@@ -13,6 +13,7 @@ import com.firebase.client.ChildEventListener;
 import com.firebase.client.DataSnapshot;
 import com.firebase.client.Firebase;
 import com.firebase.client.FirebaseError;
+import com.firebase.client.ValueEventListener;
 
 public class PaymentActivity extends AppCompatActivity {
 
@@ -31,6 +32,10 @@ public class PaymentActivity extends AppCompatActivity {
     private Button addCredit;
     private Button reedeemCredit;
 
+    private String email;
+    private String driverWallet;
+    private String driverID;
+    private boolean findUser = true;
     //variables for extracting values from components
     private String driversEmailInput;
 
@@ -89,30 +94,30 @@ public class PaymentActivity extends AppCompatActivity {
             }
         });
 
-//        walletRef.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot dataSnapshot) {
-//
-//                /*
-//                This is for a single value like users --> messages (only one child)
-//                 */
-////                String wallet = dataSnapshot.getValue(String.class);
-////                userMoney.setText(wallet);
-//                /******/
-//
-//                /*
-//                Map is for object with more than one child
-//                 */
-////                Map<String, String> map = dataSnapshot.getValue(Map.class);
-////                String wallet = map.get("wallet");
-//                /******/
-//            }
-//
-//            @Override
-//            public void onCancelled(FirebaseError firebaseError) {
-//
-//            }
-//        });
+        walletRef.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot) {
+
+                /*
+                This is for a single value like users --> messages (only one child)
+                 */
+                String wallet = dataSnapshot.getValue().toString();
+                userMoney.setText(wallet);
+                /******/
+
+                /*
+                Map is for object with more than one child
+                 */
+//                Map<String, String> map = dataSnapshot.getValue(Map.class);
+//                String wallet = map.get("wallet");
+                /******/
+            }
+
+            @Override
+            public void onCancelled(FirebaseError firebaseError) {
+
+            }
+        });
 
         Firebase eRootRef = wRootRef.child("users");//.child(userID);
 
@@ -120,116 +125,110 @@ public class PaymentActivity extends AppCompatActivity {
         submitPayment.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(PaymentActivity.this, MainActivity.class);
-                startActivity(i);
+
 
                 /**
                  * get the amount entered and subtract it from the user then update the user wallet.(do this to passenger only, not the driver)
                  */
-//                Firebase driverRef = wRootRef.child("users");//
-//
+                Firebase driverRef = wRootRef.child("users");//
+
+                if (checkValue() == false) {
+                    System.out.println("");
+                    return;
+                }
+                else {
+
+                    Double userWallet = Double.parseDouble(usersRef.child(userID).child("wallet").getKey().toString());
+                    Double driverWallet = Double.parseDouble(usersRef.child(driverID).child("wallet").getKey().toString());
+                    Double hold;
+
+                    userWallet = userWallet - Double.parseDouble(paymentAmount.getText().toString());
+                    driverWallet = driverWallet - Double.parseDouble(paymentAmount.getText().toString());
+
+                    ref.child("users").child(userID).child("wallet").setValue(userWallet.toString());
+                    ref.child("users").child(driverID).child("wallet").setValue(driverWallet.toString());
+                }
+                ;
 //
 //                double dCredit = Double.parseDouble(driversCredit);
 //                double pCredit = 0;
 
-//                String amount = "";
-//
-//
-//
-//                walletRef.child("wallet").setValue(amount);
+                String amount = "";
 
-//                Intent i = new Intent(PaymentActivity.this, PaymentActivity.class);
-//                startActivity(i);
+
+
+                Intent i = new Intent(PaymentActivity.this, PaymentActivity.class);
+                startActivity(i);
             }
+
+            private boolean checkValue() {
+                email = mEmailAddress.getText().toString();
+
+                findUser(); //Check if user is in database
+
+                if (mEmailAddress.getText().toString().isEmpty()) {
+
+                    return false;
+                } else if(findUser){
+                    findUser = true;
+                    return false;
+                }
+                else if(paymentAmount.getText().toString().isEmpty()){
+
+                    return false;
+                }
+
+
+
+                return true;
+            }
+
+            private void findUser(){
+                Firebase rootsUserRef = ref.child("users");
+
+
+
+                rootsUserRef.addListenerForSingleValueEvent(new ValueEventListener() {
+
+                    @Override
+                    public void onDataChange(DataSnapshot dataSnapshot) {
+
+                        for (DataSnapshot userSnapshot : dataSnapshot.getChildren()){
+                            //String currentUserId = userSnapshot.getKey();
+                            String tempEmail = "";
+                            driverID = userSnapshot.getKey();
+                            if(((String) userSnapshot.child("emailAddress").getValue())!=null){
+                                tempEmail = (String) userSnapshot.child("emailAddress").getValue();
+                                System.out.println(tempEmail);
+                            }
+                            // System.out.println("ITS JSON");
+                            //System.out.println(email + "::" + userSnapshot.child("emailAddress").getValue().toString());
+                            if(tempEmail.equals(email)){
+                                driverWallet = userSnapshot.child("wallet").getValue().toString();
+                                findUser = false;
+
+                            }
+                            else{
+                                driverID = "";
+                                driverWallet = "";
+                            }
+                        }
+                    }
+
+                    @Override
+                    public void onCancelled(FirebaseError firebaseError) {
+
+                    }
+                });
+
+
+            }
+
+
         });
 
 
-//        authData = ref.getAuth();
-//        userID = ref.getAuth().getUid();
-        //initializing activity components
-//        mEmailAddress = (EditText) findViewById(R.id.emailAddress);
-//        paymentAmount = (EditText) findViewById(R.id.paymentAmount);
-//        userMoney = (TextView) findViewById(R.id.userMoney);
-//        submitPayment = (Button) findViewById(R.id.subPayButton);
-//        addCredit = (Button) findViewById(R.id.addCreditButton);
-//        reedeemCredit = (Button) findViewById(R.id.reedeemCreditButton);
-
-        /**
-         * get wallet amount from firebase and set it to textview
-         */
-
-        //*****userMoney.setText(ref.child("users").child((String)userID).child("wallet").getKey()); // incorrect
-
-
-        // Attach an listener to read the data at our posts reference
-//        ref.addValueEventListener(new ValueEventListener() {
-//            @Override
-//            public void onDataChange(DataSnapshot snapshot) {
-//
-//                for (DataSnapshot postSnapshot: snapshot.getChildren()) {
-//                    User post = postSnapshot.getValue(User.class);
-//                    System.out.println(post.getWallet());
-//                }
-//            }
-//            @Override
-//            public void onCancelled(FirebaseError firebaseError) {
-//                System.out.println("The read failed: " + firebaseError.getMessage());
-//            }
-//        });
-
-//        ref.addChildEventListener(new ChildEventListener() {
-//            // Retrieve new posts as they are added to the database
-//
-//            @Override
-//            public void onChildAdded(DataSnapshot dataSnapshot, String s) {
-//
-//            }
-//
-//            // Get the data on a post that has changed
-//            @Override
-//            public void onChildChanged(DataSnapshot snapshot, String previousChildKey) {
-//                String wallet = (String) snapshot.child("wallet").getValue();
-//            }
-//
-//            @Override
-//            public void onChildRemoved(DataSnapshot dataSnapshot) {
-//
-//            }
-//
-//            @Override
-//            public void onChildMoved(DataSnapshot dataSnapshot, String s) {
-//
-//            }
-//
-//            @Override
-//            public void onCancelled(FirebaseError firebaseError) {
-//                System.out.println("The read failed: " + firebaseError.getMessage());
-//            }
-//        });
-
-
-
-
-
-            /**
-             * Action for 'submitPayment'
-             * Calculations and Firebase will be dealt with here
-             */
-
-//        submitPayment.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//
-//                /**
-//                 * TO DO: take the user's money reference and subtract the payment amount from it
-//                 *          and store it back in the db
-//                 */
-//
-//
-//                /**
-//                 * TO DO: fetch driver money amount from db, add the payment amount to it and store it back in the db
-//                 */
-//            }
-//        });
     }
+
+
 }

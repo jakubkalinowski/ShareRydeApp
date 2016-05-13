@@ -14,13 +14,15 @@ public class User {
     private String seatsAmount;
     private String status;
     private String wallet = "100";
+    private String longitude;
+    private String latitude;
 
     public User() {
         // necessary for Firebase's deserializer
     }
 
     public User(String fullName, String emailAddress, String password,
-                String address, String vehicle, String seatsAmount, String status, String walletInput){
+                String address, String vehicle, String seatsAmount, String status, String walletInput, String longitude, String latitude){
         this.fullName = fullName;
         this.emailAddress = emailAddress;
         this.password = password;
@@ -29,6 +31,8 @@ public class User {
         this.seatsAmount = seatsAmount;
         this.status = status;
         this.wallet = walletInput;
+        this.longitude = longitude;
+        this.latitude = latitude;
     }
 
     public String getStatus() {
@@ -93,5 +97,21 @@ public class User {
 
     public void setWallet(String wallet) {
         this.wallet = wallet;
+    }
+
+    public String getLongitude() {
+        return longitude;
+    }
+
+    public void setLongitude(String longitude) {
+        this.longitude = longitude;
+    }
+
+    public String getLatitude() {
+        return latitude;
+    }
+
+    public void setLatitude(String latitude) {
+        this.latitude = latitude;
     }
 }

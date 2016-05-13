@@ -21,10 +21,11 @@ public class MainActivity extends AppCompatActivity {
     private Button mStatusButton;
     private Button mRequestButton;
     private Button mPaymentButton;
-    private Button mProfileButton;
+//    private Button mProfileButton;
     private Button mLogoutButton;
     private Button mMessagesButton;
     private Button mReviewButton;
+    private Button mVehicleButton;
 
     //variables for extracting values from components
     private boolean status = false;
@@ -66,10 +67,11 @@ public class MainActivity extends AppCompatActivity {
         mStatusButton = (Button) findViewById(R.id.statusButton);
         mRequestButton = (Button) findViewById(R.id.requestButton);
         mPaymentButton = (Button) findViewById(R.id.paymentButton);
-        mProfileButton = (Button) findViewById(R.id.profileButton);
+//        mProfileButton = (Button) findViewById(R.id.profileButton);
         mLogoutButton = (Button) findViewById(R.id.logoutButton);
         mMessagesButton = (Button) findViewById(R.id.messagesButton);
         mReviewButton = (Button) findViewById(R.id.reviewButton);
+        mVehicleButton = (Button)findViewById(R.id.vehicleButton);
 
         authData = ref.getAuth();
         userID = ref.getAuth().getUid();
@@ -85,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
         mRequestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                Intent i = new Intent(MainActivity.this, RequestARide.class);
                 startActivity(i);
             }
         });
@@ -157,6 +159,14 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, ReviewActivity.class);
+                startActivity(i);
+            }
+        });
+
+        mVehicleButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, VehicleActivity.class);
                 startActivity(i);
             }
         });

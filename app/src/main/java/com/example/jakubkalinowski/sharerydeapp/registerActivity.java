@@ -2,6 +2,7 @@ package com.example.jakubkalinowski.sharerydeapp;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputLayout;
 import android.support.v7.app.AppCompatActivity;
@@ -36,7 +37,11 @@ public class registerActivity extends AppCompatActivity {
     private Button mSignUpButton;
     private String fullNameInput;
     private String emailInput;
-
+    private EditText longitude;
+    private EditText latitude;
+    private Button getLongLat;
+    private Handler handler = new Handler();
+    Runnable runnable = null, runnableTimer;
 
     /**
      * getters and setters
@@ -96,6 +101,8 @@ public class registerActivity extends AppCompatActivity {
     private String seatsAmountInput;
     private String statusCheck;
     private String walletInput = "";
+    private String longitudeString;
+    private String latitudeString;
 
     /**
      * String Input setters
@@ -128,6 +135,7 @@ public class registerActivity extends AppCompatActivity {
 
 
         //this part is for hint animation
+        getLongLat = (Button) findViewById(R.id.getGPS_ID);
         TextInputLayout fullNameWrapper = (TextInputLayout) findViewById(R.id.fullName_textInput);
         TextInputLayout emailAddressWrapper = (TextInputLayout) findViewById(R.id.email_address_text_input);
         TextInputLayout passwordWrapper = (TextInputLayout) findViewById(R.id.password_textInput);
@@ -143,6 +151,30 @@ public class registerActivity extends AppCompatActivity {
         addressWrapper.setHint("Address (Street, City, State, Zip Code");
         vehicleWrapper.setHint("Vehicle (Year, Make, Model, Color");
         seatsAmountWrapper.setHint("Amount of seats available in the vehicle");
+
+        getLongLat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(registerActivity.this, GPS_Location.class);
+                startActivity(i);
+
+
+            }
+        });
+
+        // GPS_Location.longitudeNetwork
+        //GPS_Location.latitudeNetwork
+
+
+        runnableTimer = new Runnable() {
+            @Override
+            public void run() {
+                latitude.setText(Double.toString(GPS_Location.latitudeNetwork));
+                longitude.setText(Double.toString(GPS_Location.longitudeNetwork));
+            }
+        };
+        handler.postDelayed(runnableTimer, 1000* 15);
+
 
     }
 
@@ -164,7 +196,8 @@ public class registerActivity extends AppCompatActivity {
         mSeatsAmount = (EditText) findViewById(R.id.seatsAmount);
         mSignUpButton = (Button) findViewById(R.id.sign_up_button_register_activity);
         statusCheck = "passenger";
-
+        longitude = (EditText) findViewById(R.id.longitude_id);
+        latitude= (EditText)findViewById(R.id.latitude_id);
         //setting hints for animation
 
         /**
@@ -194,6 +227,8 @@ public class registerActivity extends AppCompatActivity {
                 addressInput = mAddress.getText().toString();
                 vehicleInput = mVehicle.getText().toString();
                 seatsAmountInput = mSeatsAmount.getText().toString();
+                latitudeString = latitude.getText().toString();
+                longitudeString = longitude.getText().toString();
 
                 if(vehicleInput != null){
                     DriverActivity dr = new DriverActivity(getFullNameInput(), getVehicleInput(), Integer.parseInt(getSeatsAmountInput()) , getAddressInput());
@@ -201,7 +236,7 @@ public class registerActivity extends AppCompatActivity {
                     PassengerActivity pa = new PassengerActivity(getFullNameInput(), getAddressInput());
                 }
 
-                final User newUser = new User(fullNameInput, emailInput, passwordInput, addressInput, vehicleInput, seatsAmountInput, statusCheck, walletInput);
+                final User newUser = new User(fullNameInput, emailInput, passwordInput, addressInput, vehicleInput, seatsAmountInput, statusCheck, walletInput, longitudeString, latitudeString);
 
                 ref.createUser(newUser.getEmailAddress(), newUser.getPassword(), new Firebase.ValueResultHandler<Map<String, Object>>() {
                     @Override

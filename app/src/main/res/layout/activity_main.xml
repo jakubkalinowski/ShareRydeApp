@@ -123,18 +123,18 @@
         android:textSize="20dp"
         android:onClick="processPayment"/>
 
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="EDIT PROFILE"
-        android:id="@+id/profileButton"
-        android:layout_below="@+id/textView"
-        android:layout_centerHorizontal="true"
-        android:textSize="20dp"
-        android:background="#171aec"
-        android:textColor="#ffffff"
-        android:layout_marginTop="20dp"
-        android:onClick="editProfile"/>
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="EDIT PROFILE"-->
+        <!--android:id="@+id/profileButton"-->
+        <!--android:layout_below="@+id/textView"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:textSize="20dp"-->
+        <!--android:background="#171aec"-->
+        <!--android:textColor="#ffffff"-->
+        <!--android:layout_marginTop="20dp"-->
+        <!--android:onClick="editProfile"/>-->
 
     <Button
         android:layout_width="match_parent"
@@ -143,7 +143,7 @@
         android:id="@+id/logoutButton"
         android:textColor="#ffffff"
         android:textSize="20dp"
-        android:background="##ff0d00"
+        android:background="#fe1b12"
         android:layout_marginTop="20dp"
         android:onClick="logout"/>
         </LinearLayout>

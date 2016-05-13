@@ -138,6 +138,26 @@
             </android.support.design.widget.TextInputLayout>
 
             <Button
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                android:id="@+id/getGPS_ID"
+                android:text="Get your curreent latitude and longitude"
+                android:background="#ff5e00"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:id="@+id/latitude_id"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                android:id="@+id/longitude_id"/>
+
+            <Button
                 android:id="@+id/sign_up_button_register_activity"
                 style="?android:textAppearanceSmall"
                 android:layout_width="match_parent"
