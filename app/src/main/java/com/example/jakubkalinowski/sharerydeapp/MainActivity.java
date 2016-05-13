@@ -143,7 +143,7 @@ public class MainActivity extends AppCompatActivity {
         mRequestButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent i = new Intent(MainActivity.this, MapsActivity.class);
+                Intent i = new Intent(MainActivity.this, GPS_Location.class);
                 startActivity(i);
             }
         });
