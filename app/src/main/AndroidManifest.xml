@@ -44,8 +44,9 @@
             android:label="@string/title_activity_main"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".registerActivity" />
-        <!--<activity android:name=".PassengerActivity" />-->
-        <!--<activity android:name=".DriverActivity" />-->
+        <!-- <activity android:name=".PassengerActivity" /> -->
+        <!-- <activity android:name=".DriverActivity" /> -->
+
 
         <!--
              The API key for Google Maps-based APIs is defined as a string resource.
@@ -64,7 +65,8 @@
             android:label="@string/title_activity_maps" />
         <activity android:name=".MemberScheduleActivity" />
         <activity android:name=".PaymentActivity" />
-        <activity android:name=".MessagesActivity"></activity>
+        <activity android:name=".MessagesActivity" />
+        <activity android:name=".ReviewActivity"></activity>
     </application>
 
 </manifest>
