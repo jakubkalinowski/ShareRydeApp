@@ -13,14 +13,14 @@ public class User {
     private String vehicle;
     private String seatsAmount;
     private String status;
-    private int wallet;
+    private String wallet = "100";
 
     public User() {
         // necessary for Firebase's deserializer
     }
 
     public User(String fullName, String emailAddress, String password,
-                String address, String vehicle, String seatsAmount, String status, int walletInput){
+                String address, String vehicle, String seatsAmount, String status, String walletInput){
         this.fullName = fullName;
         this.emailAddress = emailAddress;
         this.password = password;
@@ -87,11 +87,11 @@ public class User {
         this.seatsAmount = seatsAmount;
     }
 
-    public int getWallet() {
+    public String getWallet() {
         return wallet;
     }
 
-    public void setWallet(int wallet) {
+    public void setWallet(String wallet) {
         this.wallet = wallet;
     }
 }

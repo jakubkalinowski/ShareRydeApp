@@ -10,13 +10,6 @@ import android.widget.TextView;
 import com.firebase.client.AuthData;
 import com.firebase.client.Firebase;
 
-import com.firebase.client.FirebaseError;
-import com.firebase.client.Query;
-import com.google.android.gms.common.api.GoogleApiClient;
-import com.google.android.gms.location.LocationServices;
-
-import java.util.Map;
-
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mPaymentButton;
     private Button mProfileButton;
     private Button mLogoutButton;
+    private Button mMessagesButton;
 
     //variables for extracting values from components
     private boolean status = false;
@@ -73,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         mPaymentButton = (Button) findViewById(R.id.paymentButton);
         mProfileButton = (Button) findViewById(R.id.profileButton);
         mLogoutButton = (Button) findViewById(R.id.logoutButton);
+        mMessagesButton = (Button) findViewById(R.id.messagesButton);
 
         authData = ref.getAuth();
         userID = ref.getAuth().getUid();
@@ -80,6 +75,7 @@ public class MainActivity extends AppCompatActivity {
         /**
          * Populate the button with user status fetched from db
          */
+
 
         mStatusButton.setText(usersRef.child(authData.getUid().toString()).child("status").getKey());
 //        mStatusButton.setText(userID.);
@@ -114,6 +110,18 @@ public class MainActivity extends AppCompatActivity {
 //
 //            }
 //        });
+
+        /**
+         * Action for 'mMessagesButton'
+         * Allows users to communicate
+         */
+        mMessagesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(MainActivity.this, MessagesActivity.class);
+                startActivity(i);
+            }
+        });
 
         /**
          * Action for 'mPaymentButton

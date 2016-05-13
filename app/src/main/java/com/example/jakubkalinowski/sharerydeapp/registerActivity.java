@@ -28,10 +28,23 @@ public class registerActivity extends AppCompatActivity {
     //variables for all the components of the activity
     private EditText mFullName;
     private EditText mEmailAddress;
+    private EditText mPassword;
+    private EditText mRepeatPassword;
+    private EditText mAddress;
+    private EditText mVehicle;
+    private EditText mSeatsAmount;
+    private Button mSignUpButton;
+    private String fullNameInput;
+    private String emailInput;
 
-   public String getSeatsAmountInput(){
+
+    /**
+     * getters and setters
+     * @return
+     */
+    public String getSeatsAmountInput(){
        return seatsAmountInput;
-   }
+    }
 
     public String getFullNameInput() {
         return fullNameInput;
@@ -48,17 +61,6 @@ public class registerActivity extends AppCompatActivity {
     public String getVehicleInput() {
         return vehicleInput;
     }
-
-    private EditText mPassword;
-    private EditText mRepeatPassword;
-    private EditText mAddress;
-    private EditText mVehicle;
-    private EditText mSeatsAmount;
-    private Button mSignUpButton;
-
-    //variables for extracting values from components
-    private String fullNameInput;
-    private String emailInput;
 
     public void setPasswordInput(String passwordInput) {
         this.passwordInput = passwordInput;
@@ -84,15 +86,21 @@ public class registerActivity extends AppCompatActivity {
         this.mFullName = mFullName;
     }
 
+    /**
+     * String inputs
+     */
     private String passwordInput;
     private String repeatPasswordInput;
-
     private String addressInput;
     private String vehicleInput;
     private String seatsAmountInput;
     private String statusCheck;
-    private int walletInput = 100;
+    private String walletInput = "";
 
+    /**
+     * String Input setters
+     * @param fullNameInput
+     */
     public void setFullNameInput(String fullNameInput) {
         this.fullNameInput = fullNameInput;
     }
@@ -109,7 +117,10 @@ public class registerActivity extends AppCompatActivity {
         this.vehicleInput = vehicleInput;
     }
 
-
+    /**
+     * OnCreate
+     * @param savedInstanceState
+     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -135,6 +146,9 @@ public class registerActivity extends AppCompatActivity {
 
     }
 
+    /**
+     * OnStart
+     */
     @Override
     protected void onStart() {
         super.onStart();
@@ -152,7 +166,6 @@ public class registerActivity extends AppCompatActivity {
         statusCheck = "passenger";
 
         //setting hints for animation
-
 
         /**
          * Action for 'mSignUpButton'
@@ -210,7 +223,7 @@ public class registerActivity extends AppCompatActivity {
 
 
 
-                        ref.child("users").child((String) result.get("uid")).setValue(newUser);
+                        ref.child("users").child((String)result.get("uid")).setValue(newUser);
 
                         Snackbar snackbar = Snackbar.make((LinearLayout) findViewById(R.id.sign_up_layout_id), "Profile Created", Snackbar.LENGTH_LONG);
                         snackbar.show();
@@ -225,16 +238,13 @@ public class registerActivity extends AppCompatActivity {
                 });
 
                 // register button transfers to main screen
-                Intent i = new Intent(registerActivity.this, MainActivity.class);
+                Intent i = new Intent(registerActivity.this, LoginActivity.class);
                 //i.putExtra("firebaseURL", "https://allmythings2016.firebaseio.com/");
 //                i.putExtra("userEmail", email);
                 startActivity(i);
 
-
             }
         });
-
-
     }
 
     /**
