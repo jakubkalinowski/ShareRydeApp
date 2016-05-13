@@ -99,6 +99,8 @@ public class registerActivity extends AppCompatActivity {
     private String seatsAmountInput;
     private String statusCheck;
     private String walletInput = "";
+    private String longitudeString;
+    private String latitudeString;
 
     /**
      * String Input setters
@@ -130,8 +132,7 @@ public class registerActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
 
 
-        longitude = (EditText) findViewById(R.id.longitude_id);
-        latitude= (EditText)findViewById(R.id.latitude_id);
+
         //this part is for hint animation
         getLongLat = (Button) findViewById(R.id.getGPS_ID);
         TextInputLayout fullNameWrapper = (TextInputLayout) findViewById(R.id.fullName_textInput);
@@ -196,7 +197,8 @@ public class registerActivity extends AppCompatActivity {
         mSeatsAmount = (EditText) findViewById(R.id.seatsAmount);
         mSignUpButton = (Button) findViewById(R.id.sign_up_button_register_activity);
         statusCheck = "passenger";
-
+        longitude = (EditText) findViewById(R.id.longitude_id);
+        latitude= (EditText)findViewById(R.id.latitude_id);
         //setting hints for animation
 
         /**
@@ -226,6 +228,8 @@ public class registerActivity extends AppCompatActivity {
                 addressInput = mAddress.getText().toString();
                 vehicleInput = mVehicle.getText().toString();
                 seatsAmountInput = mSeatsAmount.getText().toString();
+                latitudeString = latitude.getText().toString();
+                longitudeString = longitude.getText().toString();
 
                 if(vehicleInput != null){
                     DriverActivity dr = new DriverActivity(getFullNameInput(), getVehicleInput(), Integer.parseInt(getSeatsAmountInput()) , getAddressInput());
@@ -233,7 +237,7 @@ public class registerActivity extends AppCompatActivity {
                     PassengerActivity pa = new PassengerActivity(getFullNameInput(), getAddressInput());
                 }
 
-                final User newUser = new User(fullNameInput, emailInput, passwordInput, addressInput, vehicleInput, seatsAmountInput, statusCheck, walletInput);
+                final User newUser = new User(fullNameInput, emailInput, passwordInput, addressInput, vehicleInput, seatsAmountInput, statusCheck, walletInput, longitudeString, latitudeString);
 
                 ref.createUser(newUser.getEmailAddress(), newUser.getPassword(), new Firebase.ValueResultHandler<Map<String, Object>>() {
                     @Override
